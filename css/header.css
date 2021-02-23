@@ -1,0 +1,134 @@
+a {
+    text-decoration: none;
+}
+    .left_sidebar{
+        display: none;
+    }
+
+.header-wrapper{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    position: relative;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 0px 30px;
+}
+
+.mobile-menu-social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.social-wrapper img{
+    width: 24px;
+    height: 24px;
+    margin-right: 21px;
+}
+
+.burger-menu{
+    width: 50px;
+    height: 35px;
+    margin-left: 50px;
+}
+
+.header-block-container{
+    width: 100%;
+}
+
+.header-block{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0px auto;
+    flex-direction: column;
+    height: 870px;
+    background-image: url("../images/header/IO-block-background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.header-block-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 92px;
+    line-height: 106px;
+    color: #141313;
+    margin-right: 30px;
+}
+
+.header-block-info{
+    display: flex;
+}
+
+.header-block-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 150%;
+    color: #141313;
+    margin-top: 0px;
+}
+
+.header-block nav ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-block-text span{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 150%;
+    color: #141313;
+}
+
+.header-block-text:after{
+    content: 'Помогаем всем';
+    width: 363px;
+    height: 121px;
+    margin-left: 40px;
+    padding: 33px 42px;
+    border: 3px solid #EC7505;
+    -webkit-box-shadow: 18px 18px 0px 1px rgba(236, 117, 5, 1);
+    -moz-box-shadow: 18px 18px 0px 1px rgba(236, 117, 5, 1);
+    box-shadow: 18px 18px 0px 1px rgba(236, 117, 5, 1);
+}
+
+.header-block nav ul li{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170%;
+    color: #141313;
+    cursor: pointer;
+}
+
+.header-block nav ul li:before{
+    content: url("../images/header/nav-point.svg");
+    margin-right: 10px;
+    display: none;
+}
+
+.header-block nav ul li:hover:before{
+    display: inline-block;
+}
+

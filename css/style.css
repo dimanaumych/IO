@@ -1,0 +1,100 @@
+body{
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*About-Us-Start*/
+
+.about-us-wrapper{
+    width: 100%;
+    background-color: #141313;
+    margin-top: 185px;
+}
+
+.about-us{
+    max-width: 1200px;
+    padding: 140px 0px;
+    margin: 0px auto;
+    height: 700px;
+    background-image: url("../images/front-page/about-us.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.about-us-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.about-us-text-info{
+    max-width: 370px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.about-us-text{
+    max-width: 500px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.about-us-button-wrapper{
+    display: flex;
+}
+
+.about-us-button-wrapper:after{
+    content: url("../images/front-page/arrow-down.svg");
+    margin-top: 15px;
+    margin-left: 16px;
+}
+
+
+.about-us-button:hover{
+    background: linear-gradient(0deg, #EC7505 26%, #141313 36%);
+}
+
+
+.about-us-button{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+/*About-Us-End*/
+
+
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1025px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 500px) {
+}
+@media (max-width: 450px) {
+}
