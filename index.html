@@ -39,8 +39,8 @@
 		 <nav>
 			 <ul>
 				 <li>Главная</li>
-				 <li>О нас</li>
-				 <li>Услуги</li>
+				 <a href="#about-us-wrapper"><li>О нас</li></a>
+				 <a href="#service-wrapper"><li>Услуги</li></a>
 				 <li>FAQ</li>
 				 <li>Преимущества</li>
 				 <li>Команда</li>
@@ -51,7 +51,7 @@
 </div>
 
 
-<div class="about-us-wrapper">
+<div class="about-us-wrapper" id="about-us-wrapper">
 	<div class="about-us">
 		<h2 class="about-us-title">О нас</h2>
 		<p class="about-us-text-info">Консалтинг пространство для вашего бизнеса</p>
@@ -64,24 +64,24 @@
 	</div>
 </div>
 
-<div class="service-wrapper">
+<div class="service-wrapper" id="service-wrapper">
 	<div class="service">
 		<div class="anchor-service">
 			<h2>Услуги</h2>
 			<ul>
-				<li>Создание сайта</li>
-				<li>Поддержка сайтов</li>
-				<li>Создание Брендбуков</li>
-				<li>Создание дизайна под ключ</li>
-				<li>Написание Технического задания под ключ</li>
+				<a href="#create-site"><li>Создание сайта</li></a>
+				<a href="#support-site"><li>Поддержка сайтов</li></a>
+				<a href="#brand-book-service"><li>Создание Брендбуков</li></a>
+				<a href="#design-service"><li>Создание дизайна</li></a>
+				<a href="#technical-service"><li>Написание Технического задания</li></a>
 			</ul>
 		</div>
 
 		<div class="card-container">
-			<div class="card">
+			<div class="card" id="create-site">
 				<div class="card-wrapper">
 					<div class="card-block-top">
-						<img src="images/front-page/card1.svg">
+						<img src="images/front-page/technical.svg">
 						<div class="card-wrapper-info">
 							<p class="card-title">Создание сайта</p>
 							<button class="card-button">Заказать</button>
@@ -104,12 +104,12 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="card" id="support-site">
 				<div class="card-wrapper">
 					<div class="card-block-top">
-						<img src="images/front-page/card1.svg">
+						<img src="images/front-page/team-support.svg">
 						<div class="card-wrapper-info">
-							<p class="card-title">Создание сайта</p>
+							<p class="card-title">Поддержка сайтов</p>
 							<button class="card-button">Заказать</button>
 						</div>
 					</div>
@@ -130,12 +130,12 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="card" id="brand-book-service">
 				<div class="card-wrapper">
 					<div class="card-block-top">
 						<img src="images/front-page/card1.svg">
 						<div class="card-wrapper-info">
-							<p class="card-title">Создание сайта</p>
+							<p class="card-title">Создание Брендбуков</p>
 							<button class="card-button">Заказать</button>
 						</div>
 					</div>
@@ -147,7 +147,7 @@
 							<p>30 дней</p>
 						</div>
 						<div class="point-last">
-							<p>5 специалистов</p>
+							<p>3 специалиста</p>
 						</div>
 					</div>
 					<div class="card-point-info">
@@ -156,12 +156,12 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="card" id="design-service">
 				<div class="card-wrapper">
 					<div class="card-block-top">
 						<img src="images/front-page/card1.svg">
 						<div class="card-wrapper-info">
-							<p class="card-title">Создание сайта</p>
+							<p class="card-title">Создание дизайна</p>
 							<button class="card-button">Заказать</button>
 						</div>
 					</div>
@@ -170,10 +170,10 @@
 							<p>Под Ключ</p>
 						</div>
 						<div class="point">
-							<p>30 дней</p>
+							<p>от 7 до 14 дней</p>
 						</div>
 						<div class="point-last">
-							<p>5 специалистов</p>
+							<p>2 специалистов</p>
 						</div>
 					</div>
 					<div class="card-point-info">
@@ -182,12 +182,12 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="card" id="technical-service">
 				<div class="card-wrapper">
 					<div class="card-block-top">
-						<img src="images/front-page/card1.svg">
+						<img src="images/front-page/technical.svg">
 						<div class="card-wrapper-info">
-							<p class="card-title">Создание сайта</p>
+							<p class="card-title">Написание Технического задания</p>
 							<button class="card-button">Заказать</button>
 						</div>
 					</div>
@@ -196,10 +196,10 @@
 							<p>Под Ключ</p>
 						</div>
 						<div class="point">
-							<p>30 дней</p>
+							<p>7 дней</p>
 						</div>
 						<div class="point-last">
-							<p>5 специалистов</p>
+							<p>2 специалистов</p>
 						</div>
 					</div>
 					<div class="card-point-info">
@@ -207,12 +207,93 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-
 	</div>
 </div>
 
+<div class="portfolio">
+	<div class="portfolio-wrapper">
+		<h2>Портфолио</h2>
+		<div class="portfolio-card-wrapper">
+			<div class="portfolio-card">
+				<img src="images/front-page/portfolio-arrow.svg">
+				<div class="dark-mode"></div>
+				<p class="portfolio-card-text">IO</p>
+				<p class="portfolio-card-text-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="portfolio-card">
+				<img src="images/front-page/portfolio-arrow.svg">
+				<div class="dark-mode"></div>
+				<p class="portfolio-card-text">IO</p>
+				<p class="portfolio-card-text-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="portfolio-card">
+				<img src="images/front-page/portfolio-arrow.svg">
+				<div class="dark-mode"></div>
+				<p class="portfolio-card-text">IO</p>
+				<p class="portfolio-card-text-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="portfolio-card">
+				<img src="images/front-page/portfolio-arrow.svg">
+				<div class="dark-mode"></div>
+				<p class="portfolio-card-text">IO</p>
+				<p class="portfolio-card-text-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="portfolio-card">
+				<img src="images/front-page/portfolio-arrow.svg">
+				<div class="dark-mode"></div>
+				<p class="portfolio-card-text">IO</p>
+				<p class="portfolio-card-text-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			</div>
+
+			<div class="portfolio-card">
+				<div class="dark-mode"></div>
+				<img src="images/front-page/portfolio-arrow.svg">
+				<p class="portfolio-card-text">IO</p>
+				<p class="portfolio-card-text-hover">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="faq">
+	<div class="faq-wrapper">
+		<div class="faq-title">
+			<p>FAQ</p>
+		</div>
+		<div class="faq-info-wrapper">
+			<div class="faq-info">
+				<p>Как предоставляются наши консалтинговые услуги?</p>
+				<div class="faq-info-button">
+					<img src="images/front-page/+.svg">
+				</div>
+			</div>
+			<div class="faq-info">
+				<p>Как предоставляются наши консалтинговые услуги?</p>
+				<div class="faq-info-button">
+					<img src="images/front-page/+.svg">
+				</div>
+			</div>
+			<div class="faq-info">
+				<p>Как предоставляются наши консалтинговые услуги?</p>
+				<div class="faq-info-button">
+					<img src="images/front-page/+.svg">
+				</div>
+			</div>
+			<div class="faq-info">
+				<p>Как предоставляются наши консалтинговые услуги?</p>
+				<div class="faq-info-button">
+					<img src="images/front-page/+.svg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script src="scripts/typed.min.js"></script>
 <script src="scripts/slow_anchor.js"></script>
