@@ -447,17 +447,370 @@ a {
 }
 
 
-
-
-
-
-
 /*faq-wrapper-End*/
+
+
+
+/*advantages-Start*/
+
+.advantages{
+    width: 100%;
+    background: #141313;
+    padding-bottom: 83px;
+    margin-bottom: 130px;
+}
+
+.advantages-wrapper{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.advantages-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.advantages-mini-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.advantages-wrapper-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages-calc-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-images{
+    width: 149px;
+    height: 40px;
+}
+
+.advantages-calc-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170%;
+    color: #FFFFFF;
+}
+
+.advantages-wrapper-text{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.advantages-text{
+    text-align: left;
+    max-width: 800px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+/*advantages-End*/
+
+/*team-Start*/
+
+.team{
+    width: 100%;
+}
+
+.team-wrapper{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.team-wrapper-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.team-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 170%;
+    color: #141313;
+    margin: 0;
+    padding: 0;
+}
+
+.team-title-text{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 170%;
+    color: #141313;
+    margin: 0;
+    padding: 0;
+}
+
+.team-case-wrapper{
+    max-width: 1200px;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.team-case-position{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170%;
+    color: #141313;
+    padding: 0;
+    margin: 0;
+}
+
+.team-case{
+    margin-right: 15px;
+}
+
+.team-case:last-child{
+    margin-right: 0px;
+}
+
+.team-case-image{
+    position: relative;
+    max-width: 320px;
+    height: 465px;
+}
+
+.team-case-name{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 170%;
+    color: #141313;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.team-case-hover{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170%;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+
+.dark-mode-team{
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #141313ad;
+    z-index: 1;
+    display: none;
+}
+
+
+.team-case-image::after{
+    content: '';
+    height: 10px;
+    width: 319px;
+    background: #EC7505;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+.team-case:hover .dark-mode-team{
+    display: block;
+}
+
+.team-case:hover .team-case-image::after{
+    display: block;
+}
+
+.team-case:hover .team-case-hover{
+    display: inline-block;
+}
+
+/*team-End*/
+
+/*Question-Start*/
+
+.feedback-wrapper{
+    width: 100%;
+    background-color: #141313;
+    margin-bottom: 100px;
+}
+
+.feedback{
+    max-width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 135px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.feedback-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 170%;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.feedback-image{
+    width: 50%;
+}
+
+.feedback-image img{
+    width: 100%;
+}
+
+.feedback-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-form form{
+    display: flex;
+    flex-direction: column;
+}
+.feedback-form form input{
+    background: #141313;
+    border: 0px;
+    border-bottom: 1px solid #808080;
+    outline: none;
+    padding: 0px 0px 15px 0px;
+    margin-bottom: 80px;
+    color: #FFFFFF;
+}
+
+.feedback-form form textarea{
+    background: #141313;
+    border: 0px;
+    border-bottom: 1px solid #808080;
+    outline: none;
+    color: #FFFFFF;
+    margin-bottom: 65px;
+    height: 115px;
+    resize: vertical;
+}
+
+.feedback-card-button{
+    width: 100%;
+    height: 58px;
+    background: #FFFFFF;
+    border: 1px solid #EC7505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #141313;
+    cursor: pointer;
+    box-shadow: rgb(236, 117, 5) 18px 18px 0px 1px;
+}
+
+.feedback-form form input::placeholder{
+    font-size: 18px;
+}
+.feedback-form form textarea::placeholder{
+    font-size: 18px;
+}
+
+
+/*Question-End*/
+
+/*Technology-Start*/
+
+.technology-wrapper{
+    width: 100%;
+}
+
+.technology{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.technology-title{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 170%;
+    color: #141313;
+}
+
+.technology-case-wrapper{
+
+}
+
+/*Technology-End*/
 
 
 @media (max-width: 1440px) {
 
 }
+
+@media (max-width: 1200px) {
+
+}
+
 @media (max-width: 1025px) {
 
 }
