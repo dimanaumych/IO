@@ -132,3 +132,23 @@ header{
     display: inline-block;
 }
 
+@media (max-width: 1440px) {
+
+    .header-block-text:after {
+        padding: 20px 15px;
+    }
+
+    .header-block-text {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .header-block-title {
+        padding-left: 20px;
+        font-size: 70px;
+    }
+
+    .header-block-text span {
+        font-size: 30px;
+    }
+
+}

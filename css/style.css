@@ -83,6 +83,10 @@ a {
     cursor: pointer;
 }
 
+.about-us-img{
+    display: none;
+}
+
 /*About-Us-End*/
 
 /*Service-wrapper-Start*/
@@ -137,6 +141,7 @@ a {
     width: 60%;
     display: flex;
     flex-direction: column;
+    padding-right: 20px;
 }
 
 .card{
@@ -167,8 +172,9 @@ a {
 .card-block-top{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     margin-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
 .card-button{
@@ -470,6 +476,8 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 .advantages-title{
     font-family: Ubuntu;
@@ -803,11 +811,110 @@ a {
 /*Technology-End*/
 
 
+
+
 @media (max-width: 1440px) {
+
+    .anchor-service {
+        padding: 30px;
+    }
+
+
+    .portfolio-wrapper h2 {
+        padding-left: 20px;
+    }
+
+
+
+    .portfolio-wrapper {
+        max-width: 1200px;
+    }
+
+    .portfolio-card {
+        width: 370px;
+    }
+
+    .faq-wrapper {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-title {
+        width: 100%;
+    }
+
+    .faq-title p {
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    .advantages-description {
+        justify-content: space-around;
+    }
+
+    .advantages-wrapper-info {
+        justify-content: space-around;
+    }
+
+    .team-title {
+        padding-left: 20px;
+    }
+
+    .team-title-text {
+        padding-right: 20px;
+    }
+
+    .team-case-wrapper {
+        padding: 0px 20px;
+    }
+
+    .feedback-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feedback-form {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .feedback-title {
+        line-height: 130%;
+    }
+
+    .footer-wrapper {
+        justify-content: space-around;
+    }
 
 }
 
 @media (max-width: 1200px) {
+
+    .card-block-top img{
+        max-width: 290px;
+    }
+
+    .card-container {
+        width: 57%;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .about-us {
+        background-size: 600px;
+        padding: 20px 30px;
+    }
+
+
 
 }
 
