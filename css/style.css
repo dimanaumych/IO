@@ -15,17 +15,22 @@ a {
     background-color: #141313;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .about-us{
-    max-width: 1400px;
+    max-width: 1200px;
     padding: 140px 0px;
     margin: 0px auto;
     height: 700px;
-    background-image: url("../images/front-page/about-us.svg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: right;
 }
+
+
 
 .about-us-title{
     font-family: Ubuntu;
@@ -84,7 +89,8 @@ a {
 }
 
 .about-us-img{
-    display: none;
+    max-width: 600px;
+    padding-right: 20px;
 }
 
 /*About-Us-End*/
@@ -97,7 +103,7 @@ a {
 }
 
 .service{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -138,7 +144,7 @@ a {
 }
 
 .card-container{
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
@@ -427,6 +433,7 @@ a {
 .faq-info{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #808080;
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -437,6 +444,7 @@ a {
     width: 77px;
     height: 77px;
     border: 1px solid #808080;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,7 +508,7 @@ a {
 .advantages-wrapper-info{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .advantages-calc-title{
@@ -688,6 +696,8 @@ a {
 
 /*team-End*/
 
+
+
 /*Question-Start*/
 
 .feedback-wrapper{
@@ -800,12 +810,56 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
+    padding-left: 20px;
     line-height: 170%;
     color: #141313;
 }
 
 .technology-case-wrapper{
+    max-width: 1200px;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
 
+.technology-case img{
+    max-width: 120px;
+    max-height: 67px;
+}
+
+.technology-case p{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    text-transform: uppercase;
+    color: #141313;
+}
+
+.technology-case__img{
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-case{
+    width: 180px;
+    height: 150px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border-top: 5px solid #EC7505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.34);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.34);
 }
 
 /*Technology-End*/
@@ -902,7 +956,7 @@ a {
     }
 
     .card-container {
-        width: 57%;
+        width: 60%;
         padding-right: 20px;
         display: flex;
         flex-direction: column;
@@ -910,21 +964,298 @@ a {
 
 
     .about-us {
-        background-size: 600px;
         padding: 20px 30px;
     }
 
+    .advantages-description {
+        align-items: flex-start;
+        padding-left: 20px;
+        flex-direction: column;
+    }
 
+    .technology-case-wrapper {
+        justify-content: flex-start;
+    }
+
+    .technology-case:nth-child(odd){
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
+
+    .service {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .anchor-service {
+        max-width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .card-container {
+        width: 95%;
+        padding-right: 0px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-us__info{
+        margin-bottom: 40px;
+    }
+
+    .about-us-text-info {
+        max-width: 90%;
+    }
+
+    .about-us-text {
+        max-width: 90%;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 170%;
+        color: #FFFFFF;
+    }
+
+    .anchor-service ul {
+        display: flex;
+    }
+
+    .anchor-service ul li {
+        line-height: unset;
+    }
+
+    .faq-info-button {
+        width: 55px;
+        height: 40px;
+    }
+
+    .advantages-calc-title {
+        font-size: 35px;
+    }
+
+    .advantages-images {
+        display: none;
+    }
+
+    .advantages-wrapper-info{
+        padding: 0 20px;
+    }
+
+    .advantages-wrapper-text {
+        width: 90%;
+        display: flex;
+        justify-content: end;
+        padding: 0 20px;
+    }
+
+    .advantages-calc-text {
+        font-size: 15px;
+    }
+
+    .team-wrapper-title {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .team-title-text {
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+
+    .team-case-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .team-case {
+        margin-bottom: 15px;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .feedback-form {
+        width: 90%;
+    }
+
+    .feedback-image {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .technology-case {
+        width: 174px;
+        height: 155px;
+    }
+
+    .technology-case:nth-child(odd) {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .technology-case:nth-child(3n+2) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .technology-case-wrapper {
+        justify-content: center;
+    }
 
 }
+
 @media (max-width: 768px) {
 
+
+    .header-block-info {
+        display: flex;
+        margin-bottom: 35px;
+    }
+
+    .header-block-title {
+        padding-left: 20px;
+        font-size: 45px;
+        line-height: 35px;
+    }
+
 }
+
 @media (max-width: 500px) {
+
+    .anchor-service ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .anchor-service ul li{
+        margin-right: 50px;
+    }
+
+    .about-us-img {
+        max-width: 320px;
+        padding-right: 20px;
+    }
+
+    .card-block-top {
+        flex-direction: column;
+    }
+
+    .point-first {
+        line-height: 100%;
+        font-size: 15px;
+        margin-right: 0px;
+    }
+
+    .point {
+        line-height: 100%;
+        font-size: 15px;
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+    }
+
+    .point-last {
+        line-height: 100%;
+        font-size: 15px;
+    }
+
+    .card-point {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #808080;
+        margin-bottom: 56px;
+    }
+
+    .faq-info p {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 170%;
+        color: #141313;
+    }
+
+    .faq-title {
+        font-size: 45px;
+    }
+
+    .faq-info-button {
+        width: 55px;
+        height: 35px;
+    }
+
+    .advantages-title {
+        font-size: 45px;
+    }
+
+    .advantages-wrapper-info {
+        flex-direction: column;
+    }
+
+    .team-title {
+        font-size: 45px;
+    }
+
+    .team-case-wrapper {
+        justify-content: center;
+    }
+
+    .technology-title {
+        font-size: 45px;
+    }
+
 }
+
 @media (max-width: 450px) {
+
+    .feedback-card-button {
+        width: 90%;
+        height: 58px;
+    }
+
+    .portfolio-card {
+        width: 300px;
+    }
+
+    .portfolio-wrapper h2 {
+        padding-left: 10px;
+        font-size: 40px;
+    }
+
+    .card {
+        padding: 40px 15px;
+    }
+
+    .about-us-img {
+        max-width: 270px;
+        padding-right: 20px;
+    }
+
+    .advantages-wrapper-text {
+        width: 85%;
+    }
+
 }
+
+@media (max-width: 320px) {
+
+    .faq-info-button {
+        width: 55px;
+        height: 25px;
+    }
+    
+}
+

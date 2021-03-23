@@ -60,6 +60,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+    background-size: contain;
 }
 
 .header-block-title{
@@ -151,4 +152,39 @@ header{
         font-size: 30px;
     }
 
+}
+
+@media (max-width: 1024px) {
+
+    .header-block-text:after{
+        content: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 500px) {
+
+    .header-block-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-block-info img{
+        width: 100px;
+    }
+
+    .header-block-title {
+        font-size: 35px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width: 450px) {
 }
