@@ -89,24 +89,4 @@ footer{
         font-size: 15px;
     }
 
-    .team-case-image img{
-        max-width: 300px;
-    }
-
-    .team-case-wrapper {
-        padding: 0px;
-    }
-
-    .team-case {
-        margin-right: 0px;
-    }
-
-    .advantages-title {
-        font-size: 35px;
-    }
-
-    .advantages-description {
-        padding-left: 10px;
-    }
-
 }
