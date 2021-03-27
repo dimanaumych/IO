@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IO - Контактная информация</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="shortcut icon" type="image/png" href="images/header/favicon.png"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+
+
+<div class="header-wrapper">
+	<header>
+		<a href="index.html" class="logo"><img src="images/header/IO.svg"></a>
+		<div class="mobile-menu-social">
+			<div class="social-wrapper">
+				<img src="images/header/instagram.svg">
+				<img src="images/header/facebook.svg">
+				<img src="images/header/linkedin.svg">
+			</div>
+			<a href="#" class="burger-menu"><img src="images/header/burger.svg"></a>
+		</div>
+	</header>
+</div>
+
+<div class="contact-wrapper">
+	<div class="contact">
+		<h1>Контакты</h1>
+		<div class="contact-case-wrapper">
+			<div class="info-wrapper">
+				<div class="contact-case">
+					<div class="contact-wrapper-info">
+						<img src="images/contact/point.png">
+						<p class="contact-info-title">Киев</p>
+					</div>
+					<p class="contact-info-text">ул. Васильковская 15А</p>
+				</div>
+				<div class="contact-case">
+					<div class="contact-wrapper-info">
+						<img class="img-contact-2" src="images/contact/phone.png">
+						<p class="contact-info-title">Телефон</p>
+					</div>
+					<p class="contact-info-text">+38 (044) 7681376</p>
+				</div>
+				<div class="contact-case">
+					<div class="contact-wrapper-info">
+						<img class="img-contact-2" src="images/contact/time.png">
+						<p class="contact-info-title">Время роботы</p>
+					</div>
+					<p class="contact-info-text">8:00 - 22:00</p>
+				</div>
+			</div>
+			
+			<div class="icon-wrapper">
+				<img src="images/header/instagram.svg">
+				<img src="images/header/facebook.svg">
+				<img src="images/header/linkedin.svg">
+			</div>
+		</div>
+
+		<div id="map">
+
+		</div>
+
+		<script>
+
+			function initMap() {
+
+				var uluru = {lat: 50.3936846, lng: 30.6132822};
+				// The map, centered at Uluru
+				var map = new google.maps.Map(
+						document.getElementById('map'), {
+							zoom: 15,
+							center: uluru,
+							styles: [
+								{
+									"featureType": "all",
+									"elementType": "all",
+									"stylers": [
+										{
+											"color": "#ec7505"
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#ec7505"
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels",
+									"stylers": [
+										{
+											"visibility": "on"
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"saturation": 36
+										},
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 40
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels.text.stroke",
+									"stylers": [
+										{
+											"visibility": "on"
+										},
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 16
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels.icon",
+									"stylers": [
+										{
+											"visibility": "off"
+										}
+									]
+								},
+								{
+									"featureType": "administrative",
+									"elementType": "geometry.fill",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 20
+										}
+									]
+								},
+								{
+									"featureType": "administrative",
+									"elementType": "geometry.stroke",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										},
+										{
+											"weight": 1.2
+										}
+									]
+								},
+								{
+									"featureType": "administrative.country",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"color": "#e5c163"
+										}
+									]
+								},
+								{
+									"featureType": "administrative.locality",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"color": "#c4c4c4"
+										}
+									]
+								},
+								{
+									"featureType": "administrative.neighborhood",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"color": "#e5c163"
+										}
+									]
+								},
+								{
+									"featureType": "landscape",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 20
+										}
+									]
+								},
+								{
+									"featureType": "poi",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 21
+										},
+										{
+											"visibility": "on"
+										}
+									]
+								},
+								{
+									"featureType": "poi.business",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"visibility": "on"
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "geometry.fill",
+									"stylers": [
+										{
+											"color": "#ec7505"
+										},
+										{
+											"lightness": "0"
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "geometry.stroke",
+									"stylers": [
+										{
+											"visibility": "off"
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"color": "#ffffff"
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "labels.text.stroke",
+									"stylers": [
+										{
+											"color": "#e5c163"
+										}
+									]
+								},
+								{
+									"featureType": "road.arterial",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 18
+										}
+									]
+								},
+								{
+									"featureType": "road.arterial",
+									"elementType": "geometry.fill",
+									"stylers": [
+										{
+											"color": "#575757"
+										}
+									]
+								},
+								{
+									"featureType": "road.arterial",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"color": "#ffffff"
+										}
+									]
+								},
+								{
+									"featureType": "road.arterial",
+									"elementType": "labels.text.stroke",
+									"stylers": [
+										{
+											"color": "#2c2c2c"
+										}
+									]
+								},
+								{
+									"featureType": "road.local",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 16
+										}
+									]
+								},
+								{
+									"featureType": "road.local",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"color": "#999999"
+										}
+									]
+								},
+								{
+									"featureType": "transit",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 19
+										}
+									]
+								},
+								{
+									"featureType": "water",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										}
+									]
+								}
+							]
+
+						});
+
+
+				var marker_foo = new google.maps.Marker({
+					position: uluru,
+					map: map,
+				});
+
+
+			}
+
+		</script>
+
+		<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAVbi77kn5f5HM6Qy9xCq3dJWmUViKDlA&callback=initMap">
+		</script>
+	</div>
+</div>
+
+
+
+<footer>
+	<div class="footer-wrapper">
+		<div class="footer-logo">
+			<a href="index.html"><img src="images/footer/IO.svg"></a>
+		</div>
+		<div class="footer-private-police">
+			<p>© IO - 2020. Все права защищены.</p>
+		</div>
+		<div class="footer-links">
+			<a href="#"><img src="images/header/instagram.svg"></a>
+			<a href="#"><img src="images/header/facebook.svg"></a>
+			<a href="#"><img src="images/header/linkedin.svg"></a>
+		</div>
+	</div>
+</footer>
+
+
+<script src="scripts/typed.min.js"></script>
+<script src="scripts/slow_anchor.js"></script>
+<script src="scripts/header.js"></script>
+</body>
+</html>

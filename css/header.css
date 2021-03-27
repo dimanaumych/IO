@@ -187,4 +187,7 @@ header{
 }
 
 @media (max-width: 450px) {
+    .social-wrapper {
+        display: none;
+    }
 }
