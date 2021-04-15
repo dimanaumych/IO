@@ -598,11 +598,30 @@ a {
 
 .faq-info{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
     border-bottom: 1px solid #808080;
     margin-bottom: 30px;
     padding-bottom: 30px;
+}
+.faq-info-top-title{
+    font-family: Ubuntu;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.faq-text{
+    display: none;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    width: 75%;
+    margin-top: 20px;
+}
+.faq-info-top-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faq-info-button{
@@ -615,17 +634,29 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 80px;
+    transition: background-color .5s;
 }
-
-.faq-info p{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 170%;
-    color: #141313;
+.faq-button-cancel{
+    display: none;
+    cursor: pointer;
+    width: 77px;
+    height: 77px;
+    border: 1px solid #EC7505;
+    background-color: #EC7505;
+    margin-right: 20px;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    transition: background-color .5s;
 }
-
+.faq-button-cancel img{
+    transform: rotate(45deg);
+    transition: transform .5s;
+}
+.faq-button-cancel img{
+    transition: transform .5s;
+}
 
 /*faq-wrapper-End*/
 
