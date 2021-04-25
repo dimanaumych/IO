@@ -1262,6 +1262,7 @@ a {
 
     .anchor-service ul li {
         line-height: unset;
+        margin-right: 15px;
     }
 
     .faq-info-button {
@@ -1361,7 +1362,66 @@ a {
 
 }
 
+@media (max-width: 650px) {
+
+    .about-us-img {
+        max-width: 440px;
+        padding-right: 20px;
+    }
+
+    .anchor-service {
+        padding: 10px;
+    }
+
+    .card-block-top {
+        flex-direction: column;
+    }
+
+    .card-block-top img {
+        max-width: 480px;
+    }
+
+    .anchor-service ul li {
+        font-size: 20px;
+    }
+
+    .card-wrapper-info {
+        margin-left: 0px;
+    }
+
+    .card-point {
+        flex-direction: column;
+    }
+
+    .point-first{
+        margin-right: 0px;
+    }
+
+    .point{
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+
+    }
+
+    .card-button {
+        width: 270px;
+        margin: 0px auto;
+    }
+
+    .anchor-service ul {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width: 500px) {
+
+    .card-button {
+        margin: inherit;
+    }
 
     .anchor-service ul {
         display: flex;
@@ -1523,6 +1583,11 @@ a {
         width: 55px;
         height: 25px;
     }
-    
+
+    .card-button {
+        width: 235px;
+        margin: inherit;
+    }
+
 }
 
