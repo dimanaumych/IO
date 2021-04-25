@@ -1,0 +1,69 @@
+body{
+    background: #141313;
+}
+
+.error-page-wrapper{
+    width: 100%;
+}
+
+.error-page{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.error-page_number p{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 450px;
+    color: #FFFFFF;
+}
+
+.error-page_number img{
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.error-page_number{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error-page_info p{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 629px;
+    margin-bottom: 30px;
+}
+
+.error-page_info button{
+    width: 564px;
+    height: 73px;
+    background: #FFFFFF;
+    border: 1px solid #EC7505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #141313;
+    cursor: pointer;
+    box-shadow: rgb(236 117 5) 18px 18px 0px 1px;
+    margin: 0px auto;
+}
