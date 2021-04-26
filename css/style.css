@@ -6,6 +6,7 @@ body{
 a {
     color: white;
     text-decoration: none;
+    list-style: none;
 }
 
 /*About-Us-Start*/
@@ -67,6 +68,7 @@ a {
 .about-us-button-wrapper:after{
     content: url("../images/front-page/arrow-down.svg");
     margin-left: 16px;
+    margin-top: 15px;
 }
 
 
@@ -231,7 +233,7 @@ a {
 
 
 .point-first p{
-    margin-bottom: 5px;
+    margin-bottom: 18px;
 }
 
 .point{
@@ -336,7 +338,7 @@ a {
 
 .portfolio-card-2{
     position: relative;
-    background-image: url("../images/cases/okna/Окна-1.png");
+    background-image: url("../images/cases/okna/Vikna-1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -375,7 +377,7 @@ a {
 
 .portfolio-card-5{
     position: relative;
-    background-image: url("../images/cases/картули/Картули-1.png");
+    background-image: url("../images/cases/Kartuli/Kartuli-1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -910,7 +912,7 @@ a {
 }
 
 .team-case:nth-child(3n+2){
-    margin-right: 15px;
+    margin-right: 8px;
 }
 
 /*team-End*/
@@ -1038,7 +1040,7 @@ a {
     max-width: 1200px;
     padding: 0px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 100px;
 }
 
@@ -1220,6 +1222,14 @@ a {
 
 @media (max-width: 1024px) {
 
+    .team-case-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-wrapper {
+        align-items: flex-start;
+    }
+
     .service {
         flex-direction: column;
         justify-content: center;
@@ -1359,6 +1369,23 @@ a {
         grid-template-columns: 1fr 1fr;
     }
 
+
+}
+
+
+@media (max-width: 695px) {
+
+    .team-case-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .team-wrapper {
+        align-items: center;
+    }
+
+    .team-case:nth-child(3n+2) {
+        margin-right: 0px;
+    }
 
 }
 
