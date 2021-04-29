@@ -6,7 +6,6 @@
 	<title>IO - Решение для вашего бизнеса</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/popup.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="shortcut icon" type="image/png" href="images/header/favicon.png"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,83 +18,16 @@
 
 <div class="header-wrapper">
 	<header>
-		<!-- Mobile navigation -->
-		<div class="left_sidebar">
-<!--			<a href="" class="menu-btn" ><img src="images/header/header-menu.png" class="menu_button"></a>-->
-<!--			<a href="" class="cancel-btn"><img src="images/header/cancel.png" class="cancel_button"></a>-->
-			<div class="mobile-menu-header">
-				<div class="social-icons">
-					<img src="images/header/instagram.svg">
-					<img src="images/header/facebook.svg">
-					<img src="images/header/linkedin.svg">
-				</div>
-				<a href="" class="cancel-btn">
-					<img src="images/header/cancel.png" class="cancel_button">
-				</a>
-			</div>
-			<div class="header-phone">+38 (044) 7681376</div>
-			<nav class="codrops-demos_sidebar">
-				<ul>
-					<li><a  href="index.html">Главная</a></li>
-					<li><a  href="about_us.html">Услуги</a></li>
-					<li><a  href="success_stories.html">Блог</a></li>
-					<li><a href="contact.html">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>
-		<!-- Mobile navigation -->
-		<div class="header-wrapper-menu">
 		<a href="index.html" class="logo"><img src="images/header/IO.svg"></a>
-			<div class="mobile-menu-social">
-				<div class="social-wrapper">
-					<img src="images/header/instagram.svg">
-					<img src="images/header/facebook.svg">
-					<img src="images/header/linkedin.svg">
-				</div>
-				<a href="#" class="menu-btn"><img src="images/header/header-menu.png"></a>
+		<div class="mobile-menu-social">
+			<div class="social-wrapper">
+				<img src="images/header/instagram.svg">
+				<img src="images/header/facebook.svg">
+				<img src="images/header/linkedin.svg">
 			</div>
+			<a href="#" class="burger-menu"><img src="images/header/header-menu.png"></a>
 		</div>
 	</header>
-</div>
-<div class="popup-call-back">
-	<div class="popup-content">
-		<a class="popup-close">
-			<img src="images/popup/close.png">
-		</a>
-		<div class="block-name">
-			<p class="popup-title">Заказать Услугу</p>
-		</div>
-		<p class="popup-text">"Повышение эффективности HR отдела"</p>
-		<form id = "form-popup"  method="POST">
-			<input type="text" name="first_name" id="user-name-popup" maxlength="40" placeholder= "Имя">
-			<input  type ="text" name="phone" id = "user-phone-popup" placeholder="Телефон" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" maxlength="15">
-			<textarea id = "user-details" type="comment" placeholder="Комментарий"></textarea>
-			<div class="call-me-button">
-				<button type="submit" class="popup-form-button">Отправить</button>
-			</div>
-		</form>
-
-	</div>
-</div>
-
-<div class="popup-call-back">
-	<div class="popup-content">
-		<a class="popup-close">
-			<img src="images/popup/close.png">
-		</a>
-		<div class="block-name">
-			<p class="popup-title">Заказать Услугу</p>
-		</div>
-		<p class="popup-text">"Повышение эффективности HR отдела"</p>
-		<form id = "form-popup"  method="POST">
-			<input type="text" name="first_name" id="user-name-popup" maxlength="40" placeholder= "Имя">
-			<input  type ="text" name="phone" id = "user-phone-popup" placeholder="Телефон" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" maxlength="15">
-			<textarea id = "user-details" type="comment" placeholder="Комментарий"></textarea>
-			<div class="call-me-button">
-				<button type="submit" class="popup-form-button">Отправить</button>
-			</div>
-		</form>
-	</div>
 </div>
 
 <div class="header-block-container">
@@ -251,13 +183,7 @@
 						</div>
 					</div>
 					<div class="card-point-info">
-						<p>Подбор, развитие и удержание квалифицированного персонала – основа нашего собственного развития.
-							Поэтому наши подходы в рекрутинге отличаются особой продуманностью и уже снискали популярность
-							среди наших клиентов.   Мы помогаем наниматьфинансовые директора, внутренние аудиторы,
-							финансовые аналитики и бухгалтера. Мы предельно точно оценим квалификацию специалистов,
-							их соответствие потребностям компании. При необходимости - поможем быстро интегрировать
-							новых сотрудников в рабочую среду, проанализируем их эффективность в периоды адаптации и
-							роста.</p>
+						<p>Подбор, развитие и удержание квалифицированного персонала – основа нашего собственного развития. Поэтому наши подходы в рекрутинге отличаются особой продуманностью и уже снискали популярность среди наших клиентов.   Мы помогаем наниматьфинансовые директора, внутренние аудиторы, финансовые аналитики и бухгалтера. Мы предельно точно оценим квалификацию специалистов, их соответствие потребностям компании. При необходимости - поможем быстро интегрировать новых сотрудников в рабочую среду, проанализируем их эффективность в периоды адаптации и роста.</p>
 					</div>
 				</div>
 			</div>
@@ -652,8 +578,6 @@
 <script src="scripts/typed.min.js"></script>
 <script src="scripts/slow_anchor.js"></script>
 <script src="scripts/header.js"></script>
-<script src="scripts/title.js"></script>
-<script src="scripts/popup.js"></script>
 <script src="scripts/faq.js"></script>
 <script src="scripts/numbers.js"></script>
 </body>

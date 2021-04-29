@@ -8,126 +8,6 @@ a {
     text-decoration: none;
     list-style: none;
 }
-/* HEADER BANNER */
-.header-block-container{
-    width: 100%;
-}
-.header-block{
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin: 0px auto;
-    flex-direction: column;
-    height: 870px;
-    background-image: url("../images/header/IO-block-background.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: contain;
-}
-.header-block-title{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 92px;
-    line-height: 106px;
-    color: #141313;
-    margin-right: 30px;
-}
-.header-block-info{
-    display: flex;
-}
-.header-block-text{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 150%;
-    color: #141313;
-    margin-top: 0px;
-}
-.header-block nav ul{
-    text-decoration: none;
-    list-style: none;
-}
-.header-block-text span{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 150%;
-    color: #141313;
-}
-.header-block-text:after{
-    content: 'Помогаем всем';
-    width: 363px;
-    height: 121px;
-    margin-left: 40px;
-    padding: 33px 42px;
-    border: 3px solid #EC7505;
-    -webkit-box-shadow: 18px 18px 0px 1px rgba(236, 117, 5, 1);
-    -moz-box-shadow: 18px 18px 0px 1px rgba(236, 117, 5, 1);
-    box-shadow: 18px 18px 0px 1px rgba(236, 117, 5, 1);
-}
-.header-block nav ul li{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 170%;
-    color: #141313;
-    cursor: pointer;
-}
-.header-block nav ul li:before{
-    content: url("../images/header/nav-point.svg");
-    margin-right: 10px;
-    display: none;
-}
-.header-block nav ul li:hover:before{
-    display: inline-block;
-}
-@media (max-width: 1440px) {
-
-    .header-block-text:after {
-        padding: 20px 15px;
-    }
-
-    .header-block-text {
-        font-size: 25px;
-        padding-left: 20px;
-    }
-    .header-block-title {
-        padding-left: 20px;
-        font-size: 70px;
-    }
-
-    .header-block-text span {
-        font-size: 30px;
-    }
-
-}
-@media (max-width: 1024px) {
-    .header-block-text:after{
-        content: none;
-    }
-}
-@media (max-width: 500px) {
-    .header-block-info {
-        display: flex;
-        align-items: center;
-    }
-    .header-block-info img{
-        width: 100px;
-    }
-    .header-block-title {
-        font-size: 35px;
-        line-height: 40px;
-        margin: 0;
-        padding: 0 10px;
-    }
-}
-/* HEADER BANNER */
 
 /*About-Us-Start*/
 
@@ -261,7 +141,6 @@ a {
     position: sticky;
     top: 0;
     height: 400px;
-    padding-top: 80px;
 }
 
 .card-container{
@@ -1211,7 +1090,7 @@ a {
 @media (max-width: 1440px) {
 
     .anchor-service {
-        padding: 70px;
+        padding: 30px;
     }
 
 
