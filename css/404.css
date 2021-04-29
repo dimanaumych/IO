@@ -1,0 +1,173 @@
+body{
+    background: #141313;
+}
+
+.error-page-wrapper{
+    width: 100%;
+}
+
+.error-page{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.error-page_number p{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 450px;
+    color: #FFFFFF;
+}
+
+
+
+.error-page_number img{
+    max-width: 400px;
+    max-height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.error-page_number{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.error-page_info p{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 629px;
+    margin-bottom: 30px;
+}
+
+.error-page_info button{
+    width: 564px;
+    height: 73px;
+    background: #FFFFFF;
+    border: 1px solid #EC7505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #141313;
+    cursor: pointer;
+    box-shadow: rgb(236 117 5) 18px 18px 0px 1px;
+    margin: 0px auto;
+    margin-top: 65px;
+}
+
+.first-number{
+    margin: 0;
+    margin-right: 50px;
+}
+
+.second-number{
+    margin: 0;
+    margin-left: 50px;
+}
+
+
+@media (max-width: 1440px) {
+    .error-page_number {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .error-page_number p {
+        font-size: 270px;
+    }
+
+    .error-page_number img {
+        max-width: 320px;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .error-page_number p {
+        font-size: 250px;
+    }
+
+    .error-page_number img {
+        max-width: 240px;
+    }
+
+    .first-number {
+        margin-right: 15px;
+    }
+
+
+    .second-number {
+        margin-left: 15px;
+    }
+
+    .error-page_info button {
+        width: 445px;
+    }
+
+    .error-page_number p {
+        font-size: 195px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .error-page_number img {
+        max-width: 165px;
+    }
+
+    .error-page_number p {
+        font-size: 170px;
+    }
+
+    .error-page_info button {
+        width: 330px;
+    }
+
+    .first-number {
+        margin-right: 20px;
+    }
+
+    .second-number {
+        margin-left: 20px;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+
+    .error-page_number p {
+        font-size: 130px;
+    }
+
+    .error-page_info button {
+        width: 240px;
+    }
+
+    .error-page_number img {
+        max-width: 125px;
+    }
+
+}
