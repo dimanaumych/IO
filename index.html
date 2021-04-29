@@ -6,6 +6,7 @@
 	<title>IO - Решение для вашего бизнеса</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/popup.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="shortcut icon" type="image/png" href="images/header/favicon.png"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,16 +19,79 @@
 
 <div class="header-wrapper">
 	<header>
-		<a href="index.html" class="logo"><img src="images/header/IO.svg"></a>
-		<div class="mobile-menu-social">
-			<div class="social-wrapper">
-				<img src="images/header/instagram.svg">
-				<img src="images/header/facebook.svg">
-				<img src="images/header/linkedin.svg">
+		<!-- Mobile navigation -->
+		<div class="left_sidebar">
+<!--			<a href="" class="menu-btn" ><img src="images/header/header-menu.png" class="menu_button"></a>-->
+<!--			<a href="" class="cancel-btn"><img src="images/header/cancel.png" class="cancel_button"></a>-->
+			<div class="mobile-menu-header">
+				<div class="social-icons">
+					<img src="images/header/instagram.svg">
+					<img src="images/header/facebook.svg">
+					<img src="images/header/linkedin.svg">
+				</div>
+				<a href="" class="cancel-btn">
+					<img src="images/header/cancel.png" class="cancel_button">
+				</a>
 			</div>
-			<a href="#" class="burger-menu"><img src="images/header/header-menu.png"></a>
+			<div class="header-phone">+38 (044) 7681376</div>
+			<nav class="codrops-demos_sidebar">
+				<ul>
+					<li><a  href="index.html">Главная</a></li>
+					<li><a  href="about_us.html">Услуги</a></li>
+					<li><a  href="success_stories.html">Блог</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Mobile navigation -->
+		<div class="header-wrapper-menu">
+		<a href="index.html" class="logo"><img src="images/header/IO.svg"></a>
+			<div class="mobile-menu-social">
+				<div class="social-wrapper">
+					<img src="images/header/instagram.svg">
+					<img src="images/header/facebook.svg">
+					<img src="images/header/linkedin.svg">
+				</div>
+				<a href="#" class="menu-btn"><img src="images/header/header-menu.png"></a>
+			</div>
 		</div>
 	</header>
+</div>
+<div class="popup-call-back">
+	<div class="popup-content">
+		<a class="popup-close">
+			<img src="images/header/close_1.png">
+		</a>
+		<div class="block-name">
+			<p class="popup-title">Заказать Консультацию</p>
+			<div class="popup-title-underline"></div>
+		</div>
+		<p class="popup-text">Оставьте ваш номер телефона и наш менеджер вам перезвонит</p>
+		<form id = "form-popup"  method="POST">
+			<input type="text" name="first_name" id="user-name-popup" maxlength="40" placeholder= "Имя">
+			<input  type ="text" name="phone" id = "user-phone-popup" placeholder="Телефон" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" maxlength="15">
+			<p class="popup-text" style="margin-bottom: 10px">Консультация по какому вопросу инетересует?</p>
+			<textarea id = "user-details" type="comment" placeholder="Введите текст"></textarea>
+			<div class="radio-buttons-wrapper">
+				<div class="checkbox">
+					<input type="radio"  name="call" id="radio_one" value="call">
+					<label for="radio_one">Звонок</label>
+				</div>
+				<div class="checkbox">
+					<input type="radio"  name="call" id="radio_two" value="telegram">
+					<label for="radio_two">Telegram</label>
+				</div>
+				<div class="checkbox">
+					<input type="radio"  name="call" id="radio_three" value="viber">
+					<label for="radio_three">Viber</label>
+				</div>
+			</div>
+			<div class="call-me-button">
+				<button type="submit" class="popup-form-button">Заказать звонок</button>
+			</div>
+		</form>
+
+	</div>
 </div>
 
 <div class="header-block-container">
@@ -576,6 +640,7 @@
 <script src="scripts/typed.min.js"></script>
 <script src="scripts/slow_anchor.js"></script>
 <script src="scripts/header.js"></script>
+<script src="scripts/title.js"></script>
 <script src="scripts/faq.js"></script>
 </body>
 </html>
