@@ -14,24 +14,51 @@ function showVisible() {
     if (isVisible()) {
         f = false;
         var currentNumber = 0;
-        $({numberValue: currentNumber}).animate({numberValue: 100}, {
+        $({numberValue: currentNumber}).animate({numberValue: 40}, {
             duration: 3000,
             easing: 'linear',
             step: function() {
                 $('#first-number-block').text(Math.ceil(this.numberValue));
             }
         });
-        $({numberValue: currentNumber}).animate({numberValue: 5}, {
+        $({numberValue: currentNumber}).animate({numberValue: 3}, {
             duration: 3000,
             easing: 'linear',
             step: function() {
                 $('#second-number-block').text(Math.ceil(this.numberValue));
             }
         });
+
+        $({numberValue: currentNumber}).animate({numberValue: 8000}, {
+            duration: 3000,
+            easing: 'linear',
+            step: function() {
+                $('#third-number-block').text(Math.ceil(this.numberValue));
+            }
+        });
+
+        $({numberValue: currentNumber}).animate({numberValue: 13}, {
+            duration: 3000,
+            easing: 'linear',
+            step: function() {
+                $('#fourth-number-block').text(Math.ceil(this.numberValue));
+            }
+        });
+        $({numberValue: currentNumber}).animate({numberValue: 20}, {
+            duration: 3000,
+            easing: 'linear',
+            step: function() {
+                $('#plus-number-block').text(Math.ceil(this.numberValue) + "+");
+            }
+        });
+        // $('#first-number-block').text(0);
     }
     else{
         $('#first-number-block').text(0);
         $('#second-number-block').text(0);
+        $('#third-number-block').text(0);
+        $('#fourth-number-block').text(0);
+        $('#plus-number-block').text(0);
     }
 }
 
